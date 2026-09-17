@@ -1,2 +1,3 @@
 # myself-repository
 记录我学习过程所构建的项目
+这个是我第一个通过git上传远端仓库github
