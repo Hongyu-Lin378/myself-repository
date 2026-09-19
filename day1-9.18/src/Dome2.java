@@ -1,18 +1,18 @@
 public class Dome2 {
     public static void main(String[] args) {
-        Student.setSchoolname("GDUF");
-        System.out.println(Student.getSchoolname());
+        Student.setSchool("GDUF");
+        System.out.println(Student.getSchool());
         Student lihua = new Student("GDUf","lihua");
         System.out.println(lihua.getName());
-        System.out.println(lihua.getSchoolname());
+        System.out.println(Student.getSchool());
     }
 }
 class Student{
-    private static String schoolname;
+    private static String school;
     private String name;
-    public Student(String schoolname,String name){
+    public Student(String school, String name){
         this.name=name;
-        this.schoolname = schoolname;
+        Student.school = school;
     }
 
     public String getName() {
@@ -23,11 +23,11 @@ class Student{
         this.name = name;
     }
 
-    public static String getSchoolname() {
-        return schoolname;
+    public static String getSchool() {
+        return school;
     }
 
-    public static void setSchoolname(String schoolname) {
-        Student.schoolname = schoolname;
+    public static void setSchool(String school) {
+        Student.school = school;
     }
 }
